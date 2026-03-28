@@ -2,7 +2,7 @@
 
 A physics-based animation of the Earth–Moon system orbiting the Sun, using Kepler's equation with real astronomical values.
 
-![Earth-Moon-Sun Simulation](earth_orbit.gif)
+![Earth-Moon-Sun Simulation](earth-moon-orbits.gif)
 
 ---
 
@@ -39,11 +39,11 @@ A physics-based animation of the Earth–Moon system orbiting the Sun, using Kep
 # Install dependencies
 pip install numpy matplotlib pillow
 
-# Run the simulation (saves earth_orbit.gif, then opens interactive window)
-python orbits.py
+# Run the simulation (saves earth-moon-orbits.gif, then opens interactive window)
+python main.py
 ```
 
-The GIF is saved as `earth_orbit.gif` in the working directory before the interactive window opens.
+The GIF is saved as `earth-moon-orbits.gif` in the working directory before the interactive window opens.
 
 ---
 
