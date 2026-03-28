@@ -2,7 +2,7 @@
 
 A physics-based animation of the Earth–Moon system orbiting the Sun, using Kepler's equation with real astronomical values.
 
-![Earth-Moon-Sun Simulation](earth_orbit.png)
+![Earth-Moon-Sun Simulation](earth_orbit.gif)
 
 ---
 
