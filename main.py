@@ -240,7 +240,7 @@ ax.text(0.990, 0.987,
         bbox=dict(boxstyle="round,pad=0.5", facecolor="#11112a",
                   edgecolor="#333366", alpha=0.85))
 
-ax.text(0.990, 0.884,
+ax.text(0.990, 0.882,
         "Moon orbit  (true values)\n"
         f"  a = {A_M*1e3:.4f}×10⁻³ AU\n"
         f"    = {A_M*149_597_870.7:.0f} km\n"
