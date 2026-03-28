@@ -279,6 +279,26 @@ AU_per_day_to_kms = 1731.456
 VEL_SCALE         = 0.30 / ev_arr.max()
 
 # ---------------------------------------------------------------------------
+# Animation init (clean loop reset)
+# ---------------------------------------------------------------------------
+def init():
+    earth_trail.set_data([], [])
+    earth_dot.set_data([], [])
+    vel_arrow.set_positions((0, 0), (0, 0))
+    moon_ring.set_data([], [])
+    em_line.set_data([], [])
+    moon_trail.set_data([], [])
+    moon_dot.set_data([], [])
+    date_text.set_text("")
+    dist_text.set_text("")
+    vel_text.set_text("")
+    moon_text.set_text("")
+    prec_text.set_text("")
+    return (earth_trail, earth_dot, vel_arrow,
+            moon_ring, em_line, moon_trail, moon_dot,
+            date_text, dist_text, vel_text, moon_text, prec_text)
+
+# ---------------------------------------------------------------------------
 # Animation update
 # ---------------------------------------------------------------------------
 def update(frame):
@@ -343,10 +363,12 @@ def update(frame):
 # ---------------------------------------------------------------------------
 anim = FuncAnimation(
     fig, update,
+    init_func=init,
     frames=FRAMES_PER_ORBIT,
     interval=INTERVAL_MS,
     blit=True,
 )
 
 plt.tight_layout()
+anim.save('earth_orbit.gif', writer='pillow', fps=30, dpi=80)
 plt.show()
