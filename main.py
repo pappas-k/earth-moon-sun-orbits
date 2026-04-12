@@ -23,9 +23,8 @@ Eccentricity note:
 import datetime
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
 from matplotlib.animation import FuncAnimation
-from matplotlib.patches import FancyArrowPatch
+from matplotlib.patches import FancyArrowPatch, Patch
 
 # ---------------------------------------------------------------------------
 # Kepler solver (shared by Earth and Moon)
@@ -253,10 +252,10 @@ ax.text(0.990, 0.882,
                   edgecolor="#333355", alpha=0.85))
 
 ax.legend(handles=[
-    mpatches.Patch(color="#FFD700", label="Sun"),
-    mpatches.Patch(color="#3399ff", label="Earth"),
+    Patch(color="#FFD700", label="Sun"),
+    Patch(color="#3399ff", label="Earth"),
     plt.Line2D([0], [0], color="#88aaff", lw=1.2, label="Earth trail"),
-    mpatches.Patch(color="#ddddcc", label="Moon"),
+    Patch(color="#ddddcc", label="Moon"),
     plt.Line2D([0], [0], color="#ccccaa", lw=0.9, label="Moon trail"),
     plt.Line2D([0], [0], color="#00ffaa", lw=1.3, label="Earth velocity"),
 ], loc="lower right", fontsize=7.5, facecolor="#11112a",
