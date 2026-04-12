@@ -23,7 +23,7 @@ A physics-based 2D animation of the Earth–Moon system orbiting the Sun, using 
 ## Known simplifications
 
 | What is omitted | Why it matters |
-|---|---|
+| --- | --- |
 | Orbital inclination | Earth's orbit is tilted ~7° to the Sun's equator; Moon's orbit is ~5.1° to the ecliptic |
 | Nodal regression | The Moon's ascending node precesses with a ~18.6-year period |
 | Axial tilt / seasons | Earth's 23.4° axial tilt drives seasons; not represented here |
