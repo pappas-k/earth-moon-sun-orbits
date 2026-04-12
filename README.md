@@ -52,7 +52,7 @@ The plot is saved as `earth-moon-orbits.png` in the working directory before the
 - Python 3.8+
 - numpy
 - matplotlib
-- pillow
+- pillow *(only needed for GIF export)*
 
 ---
 
