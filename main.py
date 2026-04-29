@@ -273,7 +273,7 @@ RING_C = A_M * ECC_M_VIS * MOON_SCALE             # focal offset [AU]
 #   y_ring = earth_y            + RING_B * sin(t)
 
 # ---------------------------------------------------------------------------
-START_DATE        = datetime.date(2025, 1, 3)
+START_DATE        = datetime.date(2026, 1, 3)
 AU_per_day_to_kms = 1731.456
 VEL_SCALE         = 0.30 / ev_arr.max()
 
